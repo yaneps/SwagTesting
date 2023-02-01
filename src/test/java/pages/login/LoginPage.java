@@ -38,5 +38,16 @@ public class LoginPage extends LoginUIElements {
 			throw new Exception("Error al validar etiqueta; Email incorrecto" + e.getMessage());
 		}
 	}
+	
+	public boolean visible_btnLogin() throws Exception{
+		try {
+			return btnLogin.isDisplayed();
+			
+		}catch (Exception e) {
+			throw new Exception("Error al validar que el boton login este visible" + e.getMessage());
+		}
+		
+	}
+	
 
 }

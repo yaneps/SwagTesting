@@ -1,7 +1,8 @@
 package setup;
 
 import org.openqa.selenium.WebDriver;
-
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 
@@ -10,6 +11,14 @@ import helpers.DataDriven;
 public class BaseTest {
 	
 	private WebDriver driver;
+	private WebDriverWait wait;
+
+	
+	public WebDriverWait getWaiter() {
+		this.driver=driver;
+		return this.wait= new WebDriverWait(driver, DataDriven.MAX_WAIT_TIME );
+		
+	}
 	
 	protected WebDriver getDriver() {
 		return this.driver;	

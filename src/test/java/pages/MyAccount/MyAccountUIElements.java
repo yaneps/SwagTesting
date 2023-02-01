@@ -25,5 +25,18 @@ public class MyAccountUIElements {
 	@FindBy(xpath = "//div[@class = 'app_logo']")
 	WebElement lblMyAccount;
 	
+	@FindBy(id="add-to-cart-sauce-labs-backpack")
+	WebElement btnAddCart;
+	
+	@FindBy (id ="add-to-cart-sauce-labs-bike-light")
+	WebElement btnAddCartProducto2;
+	
+	@FindBy(css = "button[id^='add'")
+	WebElement btnAddCartProducto3;
+	
+	@FindBy (xpath = "//select [@class = 'product_sort_container']" )
+	WebElement comboOrden;
+	
+	
 
 }
