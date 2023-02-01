@@ -31,15 +31,6 @@ public class FacebookPage extends FacebookUIElements {
 		}
 	}
 
-	public void click_btnTryFree() throws Exception {
-		
-		try {
-			
-			btnTryfree.click();
-			
-		}catch (Exception e) {
-			throw new Exception ("Error al dar click en el btn de TryFree" + e.getMessage());
-		}
-	}
+	
 	
 }

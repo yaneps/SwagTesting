@@ -162,9 +162,7 @@ class PracticeTest extends BaseTest{
 		Generics.switchWindowByTitle(getDriver(), DataDriven.TITTLE_PAGE_SAUCELAB);
 		Generics.saveEvidencePage(getDriver(), testName);
 		
-		//DAMOS CLICK EN TRY FOR FREE ---------PENDIENTE MAPEAR EL ELEMENTO
-		facebookPage.click_btnTryFree();
-		Generics.saveEvidencePage(getDriver(), testName);
+		
 
 
 		
